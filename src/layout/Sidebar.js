@@ -55,58 +55,58 @@ const Sidebar = ({ open, onClose }) => {
                                         marginRight: '15px'
                                     }}
                                 >
-                                    <FontAwesomeIcon 
-                                        icon={faGraduationCap} 
-                                        style={{ 
-                                            color: theme.palette.common.white, 
-                                            height: 30, 
-                                            width: 30 
-                                        }} 
+                                    <FontAwesomeIcon
+                                        icon={faGraduationCap}
+                                        style={{
+                                            color: theme.palette.common.white,
+                                            height: 30,
+                                            width: 30
+                                        }}
                                     />
                                 </Avatar>
-                                <Typography 
-                                    variant='h3' 
-                                    component='div' 
+                                <Typography
+                                    variant='h3'
+                                    component='div'
                                     color={theme.palette.text.primary}
                                     fontFamily='"Love Ya Like A Sister", cursive'
                                     fontWeight='bold'
                                     textDecoration='none'
                                     flexGrow={1}
                                 >
-                                    Bob's Programming Academy
+                                    Syahril Syams | Portfolio
                                 </Typography>
                             </IconButton>
                         </Link>
                     </Box>
                     <Box paddingX={2} paddingY={2}>
-                        <CustomButton 
+                        <CustomButton
                             href='#home'
                             icon={<HomeIcon />}
                             text='Home'
                         />
                         <Box paddingY={1}>
-                            <CustomButton 
+                            <CustomButton
                                 href='#about'
                                 icon={<InfoIcon />}
                                 text='About'
                             />
                         </Box>
                         <Box paddingY={1}>
-                            <CustomButton 
+                            <CustomButton
                                 href='#projects'
                                 icon={<ListIcon />}
                                 text='Projects'
                             />
                         </Box>
                         <Box paddingY={1}>
-                            <CustomButton 
+                            <CustomButton
                                 href='#technologies'
                                 icon={<DevicesIcon />}
                                 text='Technologies'
                             />
                         </Box>
                         <Box paddingY={1}>
-                            <CustomButton 
+                            <CustomButton
                                 href='#contact'
                                 icon={<EmailIcon />}
                                 text='CONTACT'
@@ -114,24 +114,24 @@ const Sidebar = ({ open, onClose }) => {
                         </Box>
                         <Box>
                             <Stack direction='row' spacing={1}>
-                                <IconButton 
-                                    aria-label='YouTube' 
+                                <IconButton
+                                    aria-label='YouTube'
                                     color='primary'
                                     href='#'
                                     target='_blank'
                                 >
                                     <YouTubeIcon fontSize='large' />
                                 </IconButton>
-                                <IconButton 
-                                    aria-label='LinkedIn' 
+                                <IconButton
+                                    aria-label='LinkedIn'
                                     color='primary'
                                     href='#'
                                     target='_blank'
                                 >
                                     <LinkedInIcon fontSize='large' />
                                 </IconButton>
-                                <IconButton 
-                                    aria-label='Instagram' 
+                                <IconButton
+                                    aria-label='Instagram'
                                     color='primary'
                                     href='#'
                                     target='_blank'
