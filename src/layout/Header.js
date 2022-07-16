@@ -22,6 +22,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ListIcon from '@mui/icons-material/FormatListBulleted';
 import MenuIcon from '@mui/icons-material/Menu';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import Github from '@mui/icons-material/GitHub';
+import Facebook from '@mui/icons-material/Facebook';
 
 // Font Awesome Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -175,17 +177,17 @@ const Header = ({ onSidebarOpen }) => {
                     />
                     <Box sx={{ display: { lg: 'flex', md: 'none', xs: 'none' } }}>
                         <IconButton
-                            aria-label='YouTube'
+                            aria-label='FaceBook'
                             color='primary'
-                            href='#'
+                            href='https://facebook.com/mpl210'
                             target='_blank'
                         >
-                            <YouTubeIcon fontSize='large' />
+                            <Facebook fontSize='large' />
                         </IconButton>
                         <IconButton
                             aria-label='LinkedIn'
                             color='primary'
-                            href='#'
+                            href='https://www.linkedin.com/in/syahril-syamsuddin-832045244/'
                             target='_blank'
                         >
                             <LinkedInIcon fontSize='large' />
@@ -193,10 +195,18 @@ const Header = ({ onSidebarOpen }) => {
                         <IconButton
                             aria-label='Instagram'
                             color='primary'
-                            href='#'
+                            href='https://www.instagram.com/syahrilsyamsuddin/'
                             target='_blank'
                         >
                             <InstagramIcon fontSize='large' />
+                        </IconButton>
+                        <IconButton
+                            aria-label='Github'
+                            color='primary'
+                            href='https://github.com/nzf210'
+                            target='_blank'
+                        >
+                            <Github fontSize='large' />
                         </IconButton>
                     </Box>
                     {theme.palette.mode === 'dark' && <Divider />}

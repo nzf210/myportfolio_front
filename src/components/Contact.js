@@ -73,7 +73,7 @@ const Contact = () => {
                             marginTop={4}
                             marginBottom={6}
                         >
-                            We would love to hear from you
+                            ...
                         </Typography>
                     </Box>
                     {contact.slice(0, 1).map((item, index) => (
