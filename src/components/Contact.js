@@ -10,13 +10,13 @@ import EmailIcon from '@mui/icons-material/Email';
 import LocationIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import { useTheme } from '@mui/material/styles';
-import { Map, Marker} from 'pigeon-maps';
+import { Map, Marker } from 'pigeon-maps';
 
 axios.defaults.xsrfCookieName = 'csrftoken';
 axios.defaults.xsrfHeaderName = 'X-CSRFToken';
 
 // The latitude and longitude of your location on a map 
-const coordinates = [53.350140, -6.266155];
+const coordinates = [119.5271367, -5.0794133];
 
 const Contact = () => {
     const theme = useTheme();
@@ -30,10 +30,10 @@ const Contact = () => {
                 'Access-Control-Allow-Origin': process.env.BACKEND_URL,
             }
         })
-        .then(response => {
-            setContact(response.data);
-        })
-        .catch(err => console.log(err));
+            .then(response => {
+                setContact(response.data);
+            })
+            .catch(err => console.log(err));
     };
 
     React.useEffect(() => {
@@ -42,7 +42,7 @@ const Contact = () => {
 
     return (
         <div id='contact'>
-            <Box 
+            <Box
                 position='relative'
                 marginBottom={15}
             >
@@ -111,7 +111,7 @@ const Contact = () => {
                                             <PhoneIcon fontSize='small' />
                                         </Box>
                                     </Box>
-                                    <ListItemText 
+                                    <ListItemText
                                         primary='Phone'
                                         secondary={item.phone}
                                     />
@@ -137,7 +137,7 @@ const Contact = () => {
                                             <EmailIcon fontSize='small' />
                                         </Box>
                                     </Box>
-                                    <ListItemText 
+                                    <ListItemText
                                         primary='Email'
                                         secondary={item.email}
                                     />
@@ -162,9 +162,9 @@ const Contact = () => {
                                             <LocationIcon fontSize='small' />
                                         </Box>
                                     </Box>
-                                    <ListItemText 
+                                    <ListItemText
                                         primary='Location'
-                                        secondary={item.address} 
+                                        secondary={item.address}
                                     />
                                 </Box>
                             </Box>
